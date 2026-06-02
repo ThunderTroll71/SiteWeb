@@ -413,7 +413,7 @@ const modalData = {
     projet: {
         projet1: {
             title: "Projets de cours",
-            meta: ["2025 - 2026", "IUT Aubière", "Travail personnel"],
+            meta: ["2025 - 2026", "IUT Aubière", "Travail personnel", "Saé = Situation d'Apprentissage et d'Évaluation"],
             sections: [
                 {
                     title: "Contexte pédagogique",
