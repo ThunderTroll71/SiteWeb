@@ -110,6 +110,24 @@ const modalData = {
                     content: "Réalisation de projets pratiques incluant la programmation de microcontrôleurs, la conception de circuits électroniques, et le développement d'applications informatiques simples."
                 }
             ]
+        },
+        cambridge: {
+            title: "Certificat Cambridge English",
+            meta: ["Terminale", "Niveau B2", "Bon niveau d'anglais"],
+            sections: [
+                {
+                    title: "Certification obtenue",
+                    content: "J'ai obtenu le certificat Cambridge English en Terminale, avec un niveau B2. Ce niveau correspond à une bonne maîtrise de l'anglais dans un contexte scolaire, personnel et professionnel."
+                },
+                {
+                    title: "Compétences validées",
+                    content: "Cette certification atteste de compétences en compréhension écrite, compréhension orale, expression écrite et expression orale en anglais."
+                },
+                {
+                    title: "Apport pour mon parcours",
+                    content: "Ce bon niveau d'anglais me permet de comprendre de la documentation technique, d'utiliser des ressources en ligne et de communiquer plus facilement dans le domaine des réseaux et télécommunications."
+                }
+            ]
         }
     },
     divers: {
