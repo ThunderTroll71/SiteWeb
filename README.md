@@ -20,7 +20,7 @@ Le projet utilise un système d’authentification, une base de données SQLite,
 - Gestion des utilisateurs
 - Statistiques administrateur
 - Historique des sessions
-- Portfolio personnel intégré
+- Portfolio personnel intégré dans la page /Portfolio
 - Présentation du profil
 - Présentation des compétences
 - Présentation des expériences professionnelles
