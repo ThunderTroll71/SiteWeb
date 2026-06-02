@@ -103,6 +103,10 @@
                 <h3>📡 Télécom</h3>
                 <p>Compréhension des systèmes de télécommunications modernes, traitement du signal, technologies sans fil et architectures de communication.</p>
             </div>
+            <div class="competence-card card reveal" data-type="competence" data-id="telephonie">
+                <h3>☎️ Téléphonie</h3>
+                <p>Mise en place et configuration de solutions de téléphonie IP : protocoles SIP/RTP, postes VoIP, softphones et services de communication en entreprise.</p>
+            </div>
             <div class="competence-card card reveal" data-type="competence" data-id="scripting">
                 <h3>💻 Programmation & Dev</h3>
                 <p>Développement de scripts d'automatisation en Python et Bash, création d'applications web, et maîtrise des outils de base de données.</p>
@@ -170,16 +174,7 @@
                 <p>Participation active à des associations Sportive. Organisation d'événements, travail d'équipes et développement de compétences en communication.</p>
             </div>
 
-            <div class="experience-card card reveal" data-type="experience" data-id="alternance">
-                <div class="experience-header">
-                    <div class="experience-icon">🎓</div>
-                    <div>
-                        <h3>Alternance</h3>
-                        <div class="timeline-date">2026 - 2027</div>
-                    </div>
-                </div>
-                <p>Prévision des projets d'alternance. Administration réseau, support technique.</p>
-            </div>
+            
         </div>
     </section>
 
@@ -201,18 +196,23 @@
                 <h3>🎶 Buzzers Blind Test</h3>
                 <p>Création d'un jeu de buzzers blind test en Python, avec interface graphique et gestion des scores.</p>
             </div>
+            <div class="projet-card card reveal" data-type="projet" data-id="projet4">
+                <h3>🏢 SAÉ 24 - Réseau d'entreprise</h3>
+                <p>Projet en cours portant sur la mise en place d'un réseau d'entreprise : conception de l'architecture, configuration des services réseau et sécurisation de l'infrastructure.</p>
+            </div>
         </div>
     </section>
-
+    <!-- SECTION CV -->
     <section id="CV" class="section reveal">
-        <h2>Mon Cv</h2>
-        <p style="margin-bottom: 30px;">Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous.</p>
+        <h2>Mon CV</h2>
+        <p style="margin-bottom: 30px;">Vous pouvez afficher mon CV directement sur la page, l'ouvrir dans un nouvel onglet ou le télécharger.</p>
         <div class="cv-preview">
             <div class="cv-actions">
+                <button type="button" id="cv-toggle-btn" class="download-link">Afficher mon CV</button>
                 <a href="photo/CV_Raphael_Prost.pdf" download class="download-link">Télécharger mon CV</a>
                 <a href="photo/CV_Raphael_Prost.pdf" target="_blank" rel="noopener" class="open-link">Ouvrir dans un nouvel onglet</a>
             </div>
-            <div class="cv-embed">
+            <div class="cv-embed" id="cv-embed" style="display: none;">
                 <object data="photo/CV_Raphael_Prost.pdf#view=FitH" type="application/pdf" style="width: 100%; height: 600px;">
                     <p>Votre navigateur ne peut pas afficher le PDF. <a href="photo/CV_Raphael_Prost.pdf" download>Télécharger le CV</a>.</p>
                 </object>

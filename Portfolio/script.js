@@ -119,7 +119,7 @@ const modalData = {
             sections: [
                 {
                     title: "Centres d'intérêt",
-                    content: "Je m'intéresse à l'histoire, à la science, et à la technologie. J'aime explorer différentes cultures à travers la lecture, les documentaires, et les voyages."
+                    content: "Je suis passionné par la culture générale, notamment l'histoire de la langue française, les nouvelles technologies, et les annecdotes historiques, ce qui me permet d'avoir une vision plus large du monde et de mieux comprendre les enjeux actuels ainsi que les perspectives futures."
                 },
                 {
                     title: "Activités culturelles",
@@ -228,6 +228,24 @@ const modalData = {
                 {
                     title: "Applications pratiques",
                     content: "Dans le cadre de la Saé 13 : Analyse de performances de fibres optique, compréhension des protocoles de communication TV ainsi que d'autres systèmes de communication filaires (RJ45 etc...)."
+                }
+            ]
+        },
+        telephonie: {
+            title: "Compétences Téléphonie",
+            meta: ["Niveau débutant/intermédiaire", "Téléphonie IP"],
+            sections: [
+                {
+                    title: "Domaines couverts",
+                    content: "Mise en place de solutions de téléphonie IP, configuration de postes VoIP et de softphones, compréhension des protocoles SIP et RTP, et intégration de la téléphonie dans un réseau d'entreprise."
+                },
+                {
+                    title: "Applications pratiques",
+                    content: "Configuration de services de communication, tests d'appels, vérification de la connectivité réseau et prise en compte de la qualité de service pour assurer une communication stable."
+                },
+                {
+                    title: "Objectif",
+                    content: "Développer une compétence complète autour de la ToIP afin de pouvoir participer à l'installation, au dépannage et à l'administration d'un service téléphonique en entreprise."
                 }
             ]
         },
@@ -390,16 +408,6 @@ const modalData = {
                     content: "Organisation, gestion de projet, travail en équipe, communication interpersonnelle, et développement du sens des responsabilités."
                 }
             ]
-        },
-        alternance: {
-            title: "Projet d'alternance",
-            meta: ["2026 - 2027", "Entreprise hors de l'IUT"],
-            sections: [
-                {
-                    title: "Ce que je recherche",
-                    content: "Je recherche une alternance en entreprise pour approfondir mes compétences techniques et acquérir une expérience professionnelle concrète dans le domaine des réseaux avec une partie cybersécurité."
-                }
-            ]
         }
     },
     projet: {
@@ -464,6 +472,28 @@ const modalData = {
                     content: "Programmation en C++ pour l'Arduino, gestion des capteurs et affichages, développement d'interfaces utilisateur en Python."
                 }
             ]
+        },
+        projet4: {
+            title: "SAÉ 24 - Mise en place d'un réseau d'entreprise",
+            meta: ["2025 - 2026", "IUT Aubière", "Projet en cours","Saé = Situation d'Apprentissage et d'Évaluation"],
+            sections: [
+                {
+                    title: "Objectif du projet",
+                    content: "Ce projet consiste à concevoir et mettre en place un réseau d'entreprise complet en tenant compte des besoins des utilisateurs, des services réseau et de la sécurité."
+                },
+                {
+                    title: "Travail réalisé",
+                    content: "Conception de l'architecture réseau, mise en place des équipements, configuration des services comme DHCP, DNS, serveur web ou téléphonie, et préparation des tests de validation."
+                },
+                {
+                    title: "Compétences développées",
+                    content: "Administration réseau, adressage IP, segmentation du réseau, configuration de services, documentation technique, travail en équipe et sécurisation d'une infrastructure."
+                },
+                {
+                    title: "État du projet",
+                    content: "Le projet est actuellement en cours et permet de mettre en pratique les compétences acquises en BUT Réseaux et Télécommunications."
+                }
+            ]
         }
     }
 };
@@ -518,3 +548,15 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+
+// Affichage / masquage du CV
+const cvToggleBtn = document.getElementById("cv-toggle-btn");
+const cvEmbed = document.getElementById("cv-embed");
+
+if (cvToggleBtn && cvEmbed) {
+    cvToggleBtn.addEventListener("click", () => {
+        const isHidden = cvEmbed.style.display === "none" || cvEmbed.style.display === "";
+        cvEmbed.style.display = isHidden ? "block" : "none";
+        cvToggleBtn.textContent = isHidden ? "Masquer mon CV" : "Afficher mon CV";
+    });
+}

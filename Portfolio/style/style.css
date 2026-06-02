@@ -621,3 +621,13 @@ h2 {
         font-size: 14px;
     }
 }
+
+.cv-actions button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cv-embed {
+    margin-top: 20px;
+}
